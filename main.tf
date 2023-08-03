@@ -425,7 +425,7 @@ resource "aws_instance" "bastion" {
 #### Output
 
 output "alb-dns" {
-  value = aws_lb.ghost-alb.arn
+  value = aws_lb.ghost-alb.dns_name
 }
 
 output "bastion_ip" {
